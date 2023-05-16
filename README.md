@@ -1,1 +1,1 @@
-![logo](https://github.com/Praadiip/Praadiip/blob/main/banner.gif)
+![logo](https://github.com/Praadiip/Thank_You/blob/main/preview.png)
