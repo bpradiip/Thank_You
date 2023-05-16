@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Passion+One&display=swap");
+
+:root {
+	--text-border: #ffffff40;
+	--text-border-hover: #ffffff70;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: repeating-linear-gradient(
+			0deg,
+			transparent 0,
+			transparent 1px,
+			#00000060 2px
+		),
+		repeating-linear-gradient(
+			90deg,
+			transparent 0,
+			transparent 1px,
+			#00000060 2px
+		),
+		radial-gradient(ellipse at 50% 50%, #006aff, #ff06b440) #ff0095;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	font-family: "Passion One", Arial, Helvetica, sans-serif;
+}
+
+.number span {
+	font-size: 45vmin;
+	color: #ff0000;
+	font-weight: normal;
+	transition: all 2s ease 0s;
+	display: inline-block;
+	animation: pulse 2s ease 0s infinite alternate;
+}
+
+.thanks,
+.followers {
+	font-size: 15vmin;
+	text-align: center;
+	color: #01b127;
+	text-shadow: 0px 1px 1px #ffffff20, 0px 0px 2px #ffffff20;
+}
+
+@keyframes pulse {
+	0%,
+	5% {
+		transform: translateY(0vmin);
+		text-shadow: 
+			1px 1px 1px var(--text-border), -1px -1px 1px var(--text-border),
+			-1px 0px 1px var(--text-border), 1px 0px 1px var(--text-border),
+			0vmin 0.1vmin 1px #fbbc00, 0vmin 0.2vmin 1px #fbbc00,
+			0vmin 0.3vmin 1px #e2aa00, 0vmin 0.4vmin 1px #e2aa00,
+			0vmin 0.5vmin 1px #d09c00, 0vmin 0.6vmin 1px #d09c00,
+			0vmin 0.7vmin 1px #c79601, 0vmin 0.8vmin 1px #c79601,
+			0vmin 0.9vmin 1px #bb8d00, 0vmin 1vmin 1px #bb8d00, 
+			0vmin 1.1vmin 1px #ad8200, 0vmin 1.2vmin 1px #ad8200, 
+			0vmin 1.3vmin 1px #a07900, 0vmin 1.4vmin 1px #a07900, 
+			0vmin 1.5vmin 1px #926e00, 0vmin 1.6vmin 1px #926e00, 
+			0vmin 1.7vmin 1px #846301, 0vmin 1.8vmin 1px #846301, 
+			0vmin 1.9vmin 1px #735700, 0vmin 2vmin 1px #735700,
+			0vmin 2.1vmin 1px #634b00, 0vmin 2.2vmin 1px #634b00,
+			0vmin 2.3vmin 1px #584300, 0vmin 2.4vmin 1px #584300,
+			0vmin 2.5vmin 1px #4e3c00, 0vmin 2.6vmin 1px #4e3c00,
+			0vmin 2.7vmin 1px #382b00, 0vmin 2.8vmin 1px #382b00,
+			0vmin 2.9vmin 1px #211900, 0vmin 3vmin 1px #211900,
+			0vmin 4.5vmin 3px #00000020;
+	}
+
+	100% {
+		color: #ff2c2c;
+		transform: translateY(2.5vmin);
+		text-shadow: 
+			1px 1px 1px var(--text-border-hover),	-1px -1px 1px var(--text-border-hover), 
+			-1px 0px 1px var(--text-border-hover), 1px 0px 1px var(--text-border-hover), 
+			0vmin 0.01vmin 1px #fbbc00,	0vmin 0.02vmin 1px #fbbc00, 
+			0vmin 0.03vmin 1px #e2aa00,	0vmin 0.04vmin 1px #e2aa00, 
+			0vmin 0.05vmin 1px #d09c00,	0vmin 0.06vmin 1px #d09c00, 
+			0vmin 0.07vmin 1px #c79601,	0vmin 0.08vmin 1px #c79601, 
+			0vmin 0.09vmin 1px #bb8d00,	0vmin 0.1vmin 1px #bb8d00, 
+			0vmin 0.11vmin 1px #ad8200,	0vmin 0.12vmin 1px #ad8200,
+			0vmin 0.13vmin 1px #a07900,	0vmin 0.14vmin 1px #a07900, 
+			0vmin 0.15vmin 1px #926e00,	0vmin 0.16vmin 1px #926e00, 
+			0vmin 0.17vmin 1px #846301,	0vmin 0.18vmin 1px #846301, 
+			0vmin 0.19vmin 1px #735700,	0vmin 0.2vmin 1px #735700, 
+			0vmin 0.21vmin 1px #634b00,	0vmin 0.22vmin 1px #634b00, 
+			0vmin 0.23vmin 1px #584300,	0vmin 0.24vmin 1px #584300, 
+			0vmin 0.25vmin 1px #4e3c00,	0vmin 0.26vmin 1px #4e3c00, 
+			0vmin 0.27vmin 1px #382b00,	0vmin 0.28vmin 1px #382b00, 
+			0vmin 0.29vmin 1px #211900,	0vmin 0.3vmin 1px #211900, 
+			0vmin 0.5vmin 3px #00000020;
+	}
+}
+
+.number span:nth-child(2) {
+	animation-delay: 0.35s;
+}
+
+.number span:nth-child(3) {
+	animation-delay: 0.75s;
+}
